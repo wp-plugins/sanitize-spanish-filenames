@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Sanitize Spanish Chars
+Plugin Name: Sanitize Spanish Filenames
 Plugin URI: http://www.samuelaguilera.com
 Description: Filtra el nombre de los archivos que se suben a la librería multimedia, sutituyendo los caracteres áéíóúñ y ÁÉÍÓÚÑ por aeioun y AEIOUN respectivamente.
 Version: 1.0
