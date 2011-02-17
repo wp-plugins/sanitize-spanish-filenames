@@ -16,7 +16,7 @@ Esto hace que los nombres de los archivos sean más "amigables" con algunos serv
 
 = Requirements =
 
-* WordPress 3.0 (puede que funcione en versiones anteriores, pero no está probado)
+* WordPress 3.0.x o superior (puede que funcione en versiones anteriores, pero no está probado)
     	
 == Installation ==
 
