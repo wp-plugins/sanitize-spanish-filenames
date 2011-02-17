@@ -6,11 +6,11 @@ Requires at least: 3.0
 Tested up to: 3.0.5
 Stable tag: 1.0
 
-Filtra el nombre de los archivos sutituyendo los caracteres áéíóúñ y ÁÉÍÓÚÑ por aeioun y AEIOUN respectivamente.
+Filtra el nombre de los archivos sustituyendo los caracteres áéíóúñ y ÁÉÍÓÚÑ por aeioun y AEIOUN respectivamente.
 
 == Description ==
 
-Filtra el nombre de los archivos que se suben a la librería multimedia, sutituyendo los caracteres áéíóúñ y ÁÉÍÓÚÑ por aeioun y AEIOUN respectivamente.
+Filtra el nombre de los archivos que se suben a la librería multimedia, sustituyendo los caracteres áéíóúñ y ÁÉÍÓÚÑ por aeioun y AEIOUN respectivamente.
 
 Esto hace que los nombres de los archivos sean más "amigables" con algunos servidores o incluso algunas extensiones de WordPress que no se llevan bien con los nombres de archivos que contienen carácteres internacionales como los usados en el idioma español.
 
