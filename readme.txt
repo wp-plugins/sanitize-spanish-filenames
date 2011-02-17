@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 3.0.5
 Stable tag: 1.0
 
-Filtra el nombre de los archivos que se suben a la librería multimedia, sutituyendo los caracteres áéíóúñ y ÁÉÍÓÚÑ por aeioun y AEIOUN respectivamente.
+Filtra el nombre de los archivos sutituyendo los caracteres áéíóúñ y ÁÉÍÓÚÑ por aeioun y AEIOUN respectivamente.
 
 == Description ==
 
