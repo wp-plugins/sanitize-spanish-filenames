@@ -4,13 +4,13 @@ Donate link: http://www.samuelaguilera.com
 Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos
 Requires at least: 3.0
 Tested up to: 3.1.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 
-Filtra el nombre de los archivos sustituyendo los caracteres áéíóúñ y ÁÉÍÓÚÑ por aeioun y AEIOUN respectivamente.
+Filtra el nombre de los archivos sutituyendo los caracteres áéíóúüñºª y ÁÉÍÓÚÜÑ por aeiouunoa y AEIOUUN respectivamente.
 
 == Description ==
 
-Filtra el nombre de los archivos que se suben a la librería multimedia, sustituyendo los caracteres áéíóúñ y ÁÉÍÓÚÑ por aeioun y AEIOUN respectivamente.
+Filtra el nombre de los archivos que se suben a la librería multimedia, sutituyendo los caracteres áéíóúüñºª y ÁÉÍÓÚÜÑ por aeiouunoa y AEIOUUN respectivamente.
 
 Esto hace que los nombres de los archivos sean más "amigables" con algunos servidores o incluso algunas extensiones de WordPress que no se llevan bien con los nombres de archivos que contienen carácteres internacionales como los usados en el idioma español.
 
@@ -34,6 +34,12 @@ En principio no. Pero si se te ocurre alguna forma de mejorar esta extensión, p
                                   
 == Changelog ==
 
+= 1.0.1 =
+
+* Añadidos los caracteres ü Ü º ª que serán sustituidos por u U o a
+
 = 1.0 =
 
 * Lanzamiento inicial.
+
+
