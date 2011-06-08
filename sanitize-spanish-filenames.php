@@ -3,7 +3,7 @@
 Plugin Name: Sanitize Spanish Filenames
 Plugin URI: http://www.samuelaguilera.com/archivo/filtrar-tildes-nombre-archivo-wordpress.xhtml
 Description: Filtra el nombre de los archivos que se suben a la librería multimedia, sutituyendo los caracteres áéíóúüñºª y ÁÉÍÓÚÜÑ por aeiouunoa y AEIOUUN respectivamente.
-Version: 1.0.1
+Version: 1.0.2
 Author: Samuel Aguilera
 Author URI: http://www.samuelaguilera.com
 License: GPL2
@@ -27,7 +27,7 @@ function sa_sanitize_spanish_chars ($filename) {
 
 
 $spanish_chars = array( '/á/', '/é/', '/í/', '/ó/', '/ú/', '/ü/', '/ñ/', '/Á/', '/É/', '/Í/', '/Ó/', '/Ú/', '/Ü/', '/Ñ/', '/º/', '/ª/' );
-$sanitized_chars = array('a', 'e', 'i', 'o', 'u', 'u', 'n', 'A', 'E', 'I', 'O', 'U', 'U', 'N', 'a', 'o');
+$sanitized_chars = array('a', 'e', 'i', 'o', 'u', 'u', 'n', 'A', 'E', 'I', 'O', 'U', 'U', 'N', 'o', 'a');
 
 $friendly_filename = preg_replace($spanish_chars, $sanitized_chars, $filename);
 

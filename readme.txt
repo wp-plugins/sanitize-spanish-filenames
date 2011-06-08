@@ -4,7 +4,7 @@ Donate link: http://www.samuelaguilera.com
 Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos
 Requires at least: 3.0
 Tested up to: 3.1.3
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Filtra el nombre de los archivos sutituyendo los caracteres áéíóúüñºª y ÁÉÍÓÚÜÑ por aeiouunoa y AEIOUUN respectivamente.
 
@@ -33,6 +33,10 @@ Puede. Pero no ha sido probado. Funcionará siempre que el filtro y la función 
 En principio no. Pero si se te ocurre alguna forma de mejorar esta extensión, puedes contactar conmigo a través del formulario de contacto que encontrarás en mi web.
                                   
 == Changelog ==
+
+= 1.0.2 =
+
+* Arreglado un pequeño fallo por el cual el caracter º se sustituia por 'a' en lugar de 'o', y el caracter ª también tenían intercambiado el caracter de sustitución.
 
 = 1.0.1 =
 
