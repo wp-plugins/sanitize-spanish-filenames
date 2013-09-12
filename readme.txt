@@ -7,7 +7,7 @@ Tested up to: 3.6.1
 Stable tag: 1.0.3
 License: GPL2
 
-Filtra el nombre de los archivos sutituyendo o eliminando los carácteres especiales que contengan.
+Filtra el nombre de los archivos sutituyendo o eliminando los carácteres especiales que contengan.     
 
 == Description ==
 
