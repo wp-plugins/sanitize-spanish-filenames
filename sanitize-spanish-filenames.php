@@ -3,7 +3,7 @@
 Plugin Name: Sanitize Spanish Filenames
 Plugin URI: http://www.samuelaguilera.com/archivo/filtrar-tildes-nombre-archivo-wordpress.xhtml
 Description: Filtra el nombre de los archivos que se suben a la librería multimedia, sutituyendo los caracteres áéíóúüñºª y ÁÉÍÓÚÜÑ por aeiouunoa y AEIOUUN respectivamente.
-Version: 1.0.4
+Version: 1.0.5
 Author: Samuel Aguilera
 Author URI: http://www.samuelaguilera.com
 License: GPL2
@@ -52,7 +52,7 @@ function sa_sanitize_spanish_chars ($filename) {
 			'/à/','/á/','/â/','/ã/','/å/','/æ/','/ç/','/è/','/é/','/ê/','/ë/','/ì/','/í/','/î/','/ï/','/ð/','/ñ/','/ò/','/ô/','/õ/','/×/','/ø/','/ù/','/ú/','/û/','/ý/','/þ/','/ÿ/','/Ÿ/',
 
 			'/№/','/“/','/”/','/«/','/»/','/„/','/@/','/%/', // other
-			'/‘/','/’/','/`/','/´/','/º/','/ª/','/[\s\+]/'
+			'/‘/','/’/','/`/','/´/','/º/','/ª/','/[\s\+]/','/\.(?=.*\.)/' // alternative regex /\.([^.]*(\.[^.]+$)?)/
 		);
 
 		$sanitized_chars = array(
@@ -82,11 +82,8 @@ function sa_sanitize_spanish_chars ($filename) {
 			'a','a','a','a','a','ae','c','e','e','e','e','i','i','i','i','d','n','o','o','o','x','o','u','u','u','y','p','y','y',
 
 			'','','','','','','','', // other
-			'','','','','o','a','-'
+			'','','','','o','a','-','-'
 		);
-
-
-
 
 $friendly_filename = preg_replace($original_chars, $sanitized_chars, $filename);
 

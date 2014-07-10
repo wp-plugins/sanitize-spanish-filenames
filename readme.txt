@@ -4,7 +4,7 @@ Donate link: http://www.samuelaguilera.com
 Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos, sanitize
 Requires at least: 3.0
 Tested up to: 3.9.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPL2
 
 Filtra el nombre de los archivos sutituyendo o eliminando los carácteres especiales que contengan.     
@@ -16,6 +16,8 @@ Filtra el nombre de los archivos que se suben a la librería multimedia (no afec
 а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ь ю я ґ є і ї ё ы ъ э ў ą ć ę ł ń ó ś ź ż à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö × ø ù ú û ü ý þ ÿ ß ő ű ě š č ř ž ý á é ď ť ň ú ů +
 
 Por alternativas que no causen las incompatibilidades que los carácteres especiales en los nombres de archivo suelen provocar en determinadas configuraciones.
+
+También sustituirá todos los . del nombre del archivo por - excepto el último (el de la extensión).
 
 = Requirements =
 
@@ -41,6 +43,10 @@ No. El filtro que realiza esta extensión se realiza durante la subida del archi
                                   
 == Changelog ==
 
+= 1.0.5 =
+
+* Añadida también sustitución de todos los . del nombre del archivo excepto el último (el de la extensión) por -
+
 = 1.0.4 =
 
 * Añadido el signo + a sustituir por -
@@ -62,6 +68,10 @@ No. El filtro que realiza esta extensión se realiza durante la subida del archi
 * Lanzamiento inicial.
 
 == Upgrade Notice ==
+
+= 1.0.5 =
+
+* Añadida también sustitución de todos los . del nombre del archivo excepto el último (el de la extensión) por -
 
 = 1.0.4 =
 
