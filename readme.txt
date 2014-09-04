@@ -1,83 +1,83 @@
-=== Sanitize Spanish Filenames ===
+=== Clean Filenames ===
 Contributors: samuelaguilera
-Donate link: http://www.samuelaguilera.com
-Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos, sanitize
+Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos, sanitize, cleanup, upload
 Requires at least: 3.0
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 1.0.5
 License: GPL2
 
-Filtra el nombre de los archivos sutituyendo o eliminando los carácteres especiales que contengan.     
+Removes or replace international or special characters that can make your filenames not compliant with some servers or services.     
 
 == Description ==
 
-Filtra el nombre de los archivos que se suben a la librería multimedia (no afecta a los archivos ya subidos), sustituyendo los siguientes caracteres:
+= Makes three tasks for getting cleaner filenames =
+
+* Removes or replace special/international characters that can make your filenames not compliant with some servers or services.
+* Replaces any '+' in the filename with '-'.
+* Replaces any '.' character in the filename except for last one (for file extension) with '-'.
+
+This reduces problems with some servers, services, plugins... Thay may have problems handling filenames with special or international characters.
+
+= Complete list of replaced characters =
 
 а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ь ю я ґ є і ї ё ы ъ э ў ą ć ę ł ń ó ś ź ż à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö × ø ù ú û ü ý þ ÿ ß ő ű ě š č ř ž ý á é ď ť ň ú ů +
 
-Por alternativas que no causen las incompatibilidades que los carácteres especiales en los nombres de archivo suelen provocar en determinadas configuraciones.
-
-También sustituirá todos los . del nombre del archivo por - excepto el último (el de la extensión).
-
 = Requirements =
 
-* WordPress 3.0.x o superior (puede que funcione en versiones anteriores, pero no está probado)
+* Latest WordPress version available
     	
 == Installation ==
 
-* Extrae el contenido de archivo zip y súbelo al directorio <code>wp-content/plugins/</code> de tu WordPress (también lo puedes instalar directamente desde tu WordPress) y después activa la extensión, no tiene página de opciones.
+* Simply install from your WP dashboard or upload it using FTP, and install. No configuration needed.
 
 == Frequently Asked Questions ==
 
-= ¿Esta extensión sirve para versiones anteriores a WordPress 3.0? =
+= Will change filenames for files uploaded beftore activating the plugin? =
 
-Puede. Pero no ha sido probado. Funcionará siempre que el filtro y la función sanitize_file_name funcionen tal y como lo hacen en la rama 3.x
-
-= ¿Tienes previsto añadir otras funciones? =
-
-En principio no. Pero si se te ocurre alguna forma de mejorar esta extensión, puedes contactar conmigo a través del formulario de contacto que encontrarás en mi web.
-
-= Tengo muchos archivos ya subidos con carácteres especiales, ¿los modificará? =
-
-No. El filtro que realiza esta extensión se realiza durante la subida del archivo, y por tanto no afectará a los archivos subidos antes de activar la extensión.
+No. The plugin does his job during file upload process, so it'll change only filenames for files being uploaded after plugin activation.
                                   
 == Changelog ==
 
+= 1.0.6 =
+
+* Plugin name changed from Sanitize Spanish Filenames to Clean Filenames to better reflect actual purpose of the plugin.
+* Changed readme language to english.
+
 = 1.0.5 =
 
-* Añadida también sustitución de todos los . del nombre del archivo excepto el último (el de la extensión) por -
+* Added: Replaces any '.' character in the filename except for last one (for file extension) with '-'.
 
 = 1.0.4 =
 
-* Añadido el signo + a sustituir por -
+* Added: Replaces any '+' in the filename with '-'.
 
 = 1.0.3 =
 
-* Ampliado extensamente el juego de carácteres que se filtran. Limpiando así no sólo carácteres españoles sino de otros idiomas y algunos símbolos.
+* Many more characters and some symbols added. Cleaning not only spanish characters but from other languages too.
 
 = 1.0.2 =
 
-* Arreglado un pequeño fallo por el cual el caracter º se sustituia por 'a' en lugar de 'o', y el caracter ª también tenían intercambiado el caracter de sustitución.
+* Fixed a little bug that causes 'º' replaced by 'a' instead of 'o', and same problem for 'ª'.
 
 = 1.0.1 =
 
-* Añadidos los caracteres ü Ü º ª que serán sustituidos por u U o a
+* Added characters ü Ü º ª that will be replaced with u U o a
 
 = 1.0 =
 
-* Lanzamiento inicial.
+* Initial release.
 
 == Upgrade Notice ==
 
 = 1.0.5 =
 
-* Añadida también sustitución de todos los . del nombre del archivo excepto el último (el de la extensión) por -
+* Added: Replaces any '.' character in the filename except for last one (for file extension) with '-'.
 
 = 1.0.4 =
 
-* Añadido el signo + a sustituir por -
+* Added: Replaces any '+' in the filename with '-'.
 
 = 1.0.3 =
-Actualización recomendada.
+Recommended upgrade.
 
 
