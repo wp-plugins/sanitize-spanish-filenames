@@ -3,7 +3,7 @@ Contributors: samuelaguilera
 Donate link: http://www.samuelaguilera.com
 Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos, sanitize
 Requires at least: 3.0
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 1.0.5
 License: GPL2
 
