@@ -1,26 +1,22 @@
 === Clean Filenames ===
 Contributors: samuelaguilera
-Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos, sanitize, cleanup, upload
+Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos, sanitize, cleanup, upload, media library
 Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 1.0.5
+Tested up to: 4.1.1
+Stable tag: 1.0.6
 License: GPL2
 
 Removes or replace international or special characters that can make your filenames not compliant with some servers or services.     
 
 == Description ==
 
-= Makes three tasks for getting cleaner filenames =
+= Makes three tasks for getting cleaner and safe to use filenames =
 
-* Removes or replace special/international characters that can make your filenames not compliant with some servers or services.
-* Replaces any '+' in the filename with '-'.
-* Replaces any '.' character in the filename except for last one (for file extension) with '-'.
+* Removes or replace special/international characters that can make your filenames not compliant with some servers or services. (i.e. 'España.png' will become 'Espana.png').
+* Replaces any '+' in the filename with '-' (i.e. 'A+nice+picture.png' will become 'A-nice-picture.png').
+* Replaces any '.' character before the one used for file extension with '-'(i.e. 'A.nice.picture.png' will become 'A-nice-picture.png').
 
-This reduces problems with some servers, services, plugins... Thay may have problems handling filenames with special or international characters.
-
-= Complete list of replaced characters =
-
-а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ь ю я ґ є і ї ё ы ъ э ў ą ć ę ł ń ó ś ź ż à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö × ø ù ú û ü ý þ ÿ ß ő ű ě š č ř ž ý á é ď ť ň ú ů +
+This reduces problems with some servers, services, plugins... That may have problems handling filenames with special or international characters.
 
 = Requirements =
 
@@ -40,8 +36,8 @@ No. The plugin does his job during file upload process, so it'll change only fil
 
 = 1.0.6 =
 
-* Plugin name changed from Sanitize Spanish Filenames to Clean Filenames to better reflect actual purpose of the plugin.
-* Changed readme language to english.
+* Plugin name changed from Sanitize Spanish Filenames to Clean Filenames to better reflect actual purpose of the plugin (originally it was created only for spanish characters).
+* Changed readme content and language.
 
 = 1.0.5 =
 
