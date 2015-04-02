@@ -18,6 +18,8 @@ Removes or replace international or special characters that can make your filena
 
 This reduces problems with some servers, services, plugins... That may have problems handling filenames with special or international characters.
 
+The plugin does his job during file upload process, so it'll change only filenames for files being uploaded after plugin activation.
+
 = Requirements =
 
 * Latest WordPress version available
