@@ -2,7 +2,7 @@
 Contributors: samuelaguilera
 Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos, sanitize, cleanup, upload, media library
 Requires at least: 3.0
-Tested up to: 4.1.1
+Tested up to: 4.2.1
 Stable tag: 1.0.6
 License: GPL2
 
