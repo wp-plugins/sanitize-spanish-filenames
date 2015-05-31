@@ -1,28 +1,33 @@
 === Clean Filenames ===
 Contributors: samuelaguilera
-Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos, sanitize, cleanup, upload, media library
+Tags: utf-8, spanish, international characters, filename, nombre archivo, español, acentos, sanitize, cleanup, upload, media library, hebrew, cyrillic
 Requires at least: 3.0
-Tested up to: 4.2.1
-Stable tag: 1.0.6
+Tested up to: 4.2.2
+Stable tag: 1.0.8
 License: GPL2
 
 Removes or replace international or special characters that can make your filenames not compliant with some servers or services.     
 
 == Description ==
 
+= Features =
+
 = Makes three tasks for getting cleaner and safe to use filenames =
 
-* Removes or replace special/international characters that can make your filenames not compliant with some servers or services. (i.e. 'España.png' will become 'Espana.png').
-* Replaces any '+' in the filename with '-' (i.e. 'A+nice+picture.png' will become 'A-nice-picture.png').
-* Replaces any '.' character before the one used for file extension with '-'(i.e. 'A.nice.picture.png' will become 'A-nice-picture.png').
+* Removes or replace special/international characters that can make your filenames not compliant with servers that don't have support for international locales and filenames, or third-party services. (e.g. 'España.png' will become 'Espana.png', 'prüfen' will become 'prufen').
+* Replaces any '+' in the filename with '-' (e.g. 'A+nice+picture.png' will become 'A-nice-picture.png').
+* Replaces any '.' character before the one used for file extension with '-'(e.g. 'A.nice.picture.png' will become 'A-nice-picture.png').
+* After running all character replacement filters, a last filter is applied to ensure that the filename only contains letters, numbers, underscores, dashes, and dots. Any other character will be removed from the filename.
 
 This reduces problems with some servers, services, plugins... That may have problems handling filenames with special or international characters.
 
 The plugin does his job during file upload process, so it'll change only filenames for files being uploaded after plugin activation.
 
+It supports characters from belarusian, cyrillic alphabet, czech, german, hebrew, hungarian, russian, polish, spanish, ukrainian, and some other special characters (e.g. №, @, $, etc.)
+
 = Requirements =
 
-* Latest WordPress version available
+* WordPress 3.0 or higher
     	
 == Installation ==
 
@@ -35,6 +40,11 @@ The plugin does his job during file upload process, so it'll change only filenam
 No. The plugin does his job during file upload process, so it'll change only filenames for files being uploaded after plugin activation.
                                   
 == Changelog ==
+
+= 1.0.8 =
+
+* Added support for Hebrew (letters will be replaced, puntuation and ligatures will be removed). e.g. 'א' will be replaced by 'a', and 'װ' will be removed from the filename.
+* After running all character replacement filters, a last filter is applied to ensure that the filename only contains letters, numbers, underscores, dashes, and dots. Any other character will be removed from the filename.
 
 = 1.0.6 =
 
